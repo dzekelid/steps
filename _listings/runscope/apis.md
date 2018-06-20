@@ -1,24 +1,21 @@
 ---
 name: Runscope
 x-slug: runscope
-description: Runscope was started with the idea that depending on a web service API
-  in a mobile or web application should be as easy as depending on code running locally.
-  We&rsquo;ve assembled a team of API, infrastructure and developer experience experts
-  to build tools to support the modern application development lifecycle.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
+description: API performance monitoring. Everything is going to be 200 OK
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "125183"
 tags: Steps
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/apis.md
 specificationVersion: "0.14"
 apis:
 - name: Runscope Get Buckets Tests Steps
   x-api-slug: runscope
   description: List test steps for a test.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
-  humanURL: https://www.runscope.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
+  humanURL: http://runscope.com
   baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps
   tags: Buckets, Tests, Steps
   properties:
@@ -29,8 +26,8 @@ apis:
 - name: Runscope Add Buckets Tests Steps
   x-api-slug: runscope
   description: Add new test step.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
-  humanURL: https://www.runscope.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
+  humanURL: http://runscope.com
   baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps
   tags: Buckets, Tests, Steps
   properties:
@@ -39,8 +36,8 @@ apis:
 - name: Runscope Delete Buckets Tests Steps
   x-api-slug: runscope
   description: Delete a step from a test.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
-  humanURL: https://www.runscope.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
+  humanURL: http://runscope.com
   baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps/{stepId}
   tags: Buckets, Tests, Steps
   properties:
@@ -51,8 +48,8 @@ apis:
 - name: Runscope Put Buckets Tests Steps
   x-api-slug: runscope
   description: Update the details of a single test step.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
-  humanURL: https://www.runscope.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
+  humanURL: http://runscope.com
   baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps/{stepId}
   tags: Buckets, Tests, Steps
   properties:
@@ -60,12 +57,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidstepsstepid-put-openapi.md
 - name: Runscope
   x-api-slug: runscope
-  description: Runscope was started with the idea that depending on a web service
-    API in a mobile or web application should be as easy as depending on code running
-    locally. We&rsquo;ve assembled a team of API, infrastructure and developer experience
-    experts to build tools to support the modern application development lifecycle.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
-  humanURL: https://www.runscope.com/
+  description: API performance monitoring. Everything is going to be 200 OK
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
+  humanURL: http://runscope.com
   baseURL: https://api.runscope.com//
   tags: Steps
   properties:
@@ -79,9 +73,19 @@ x-common:
 - type: x-blog-rss
   url: http://blog.runscope.com/posts?format=rss
 - type: x-crunchbase
+  url: https://crunchbase.com/organization/runscope
+- type: x-crunchbase
   url: http://www.crunchbase.com/company/runscope
 - type: x-developer
   url: https://www.runscope.com/docs/api
+- type: x-email
+  url: sales@runscope.com
+- type: x-email
+  url: press@runscope.com
+- type: x-email
+  url: help@runscope.com
+- type: x-email
+  url: dmca@runscope.com
 - type: x-github
   url: https://github.com/Runscope
 - type: x-openapi-spec--authoritative
@@ -98,6 +102,8 @@ x-common:
   url: https://www.runscope.com/terms
 - type: x-twitter
   url: https://twitter.com/Runscope
+- type: x-website
+  url: http://runscope.com
 - type: x-website
   url: https://www.runscope.com/
 include: []
