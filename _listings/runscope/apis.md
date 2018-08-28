@@ -6,66 +6,64 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runsc
 x-kinRank: "9"
 x-alexaRank: "125183"
 tags: Steps
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Runscope Get Buckets Tests Steps
-  x-api-slug: runscope
+- name: Runscope - Get Buckets Tests Steps
+  x-api-slug: bucketsbucketkeyteststestidsteps-get
   description: List test steps for a test.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
   humanURL: http://runscope.com
-  baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps
-  tags: Buckets, Tests, Steps
+  baseURL: https://api.runscope.com//
+  tags: My API Stack, Monitoring, Testing, Monitoring, Testing, API LIfeyclessss,
+    Stack Network, SaaS, Technology, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidsteps-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidsteps-get-openapi.md
-- name: Runscope Add Buckets Tests Steps
-  x-api-slug: runscope
+- name: Runscope - Add Buckets Tests Steps
+  x-api-slug: bucketsbucketkeyteststestidsteps-post
   description: Add new test step.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
   humanURL: http://runscope.com
-  baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps
-  tags: Buckets, Tests, Steps
+  baseURL: https://api.runscope.com//
+  tags: My API Stack, Monitoring, Testing, Monitoring, Testing, API LIfeyclessss,
+    Stack Network, SaaS, Technology, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidsteps-post-openapi.md
-- name: Runscope Delete Buckets Tests Steps
-  x-api-slug: runscope
+- name: Runscope - Delete Buckets Tests Steps
+  x-api-slug: bucketsbucketkeyteststestidstepsstepid-delete
   description: Delete a step from a test.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
   humanURL: http://runscope.com
-  baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps/{stepId}
-  tags: Buckets, Tests, Steps
+  baseURL: https://api.runscope.com//
+  tags: My API Stack, Monitoring, Testing, Monitoring, Testing, API LIfeyclessss,
+    Stack Network, SaaS, Technology, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidstepsstepid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidstepsstepid-delete-openapi.md
-- name: Runscope Put Buckets Tests Steps
-  x-api-slug: runscope
+- name: Runscope - Put Buckets Tests Steps
+  x-api-slug: bucketsbucketkeyteststestidstepsstepid-put
   description: Update the details of a single test step.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
   humanURL: http://runscope.com
-  baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/steps/{stepId}
-  tags: Buckets, Tests, Steps
+  baseURL: https://api.runscope.com//
+  tags: My API Stack, Monitoring, Testing, Monitoring, Testing, API LIfeyclessss,
+    Stack Network, SaaS, Technology, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/bucketsbucketkeyteststestidstepsstepid-put-openapi.md
-- name: Runscope
-  x-api-slug: runscope
-  description: API performance monitoring. Everything is going to be 200 OK
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
-  humanURL: http://runscope.com
-  baseURL: https://api.runscope.com//
-  tags: Steps
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/steps/master/_listings/runscope/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://royal.bank.of.scotland.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://runscope.stack.network
 - type: x-base-url
   url: https://api.runscope.com
 - type: x-blog

@@ -85,6 +85,44 @@ paths:
       - Steps
       - Step
       - Uu
+  /repositories/{username}/{repo_slug}/pipelines/{pipeline_uuid}/steps/{step_uuid}/log:
+    get:
+      summary: Get Repositories Username Repo Slug Pipelines Pipeline Uu Steps Step
+        Uu Log
+      description: |-
+        Retrieve the log file for a given step of a pipeline.
+
+        This endpoint supports (and encourages!) the use of [HTTP Range requests](https://tools.ietf.org/html/rfc7233) to deal with potentially very large log files.
+      operationId: getRepositoriesUsernameRepoSlugPipelinesPipelineUuStepsStepUuLog
+      x-api-path-slug: repositoriesusernamerepo-slugpipelinespipeline-uuidstepsstep-uuidlog-get
+      parameters:
+      - in: path
+        name: pipeline_uuid
+        description: The UUID of the pipeline
+      - in: path
+        name: repo_slug
+        description: The repository
+      - in: path
+        name: step_uuid
+        description: The UUID of the step
+      - in: path
+        name: username
+        description: The account
+      responses:
+        200:
+          description: OK
+      tags:
+      - Repositories
+      - Username
+      - Repo
+      - Slug
+      - Pipelines
+      - Pipeline
+      - Uu
+      - Steps
+      - Step
+      - Uu
+      - Log
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

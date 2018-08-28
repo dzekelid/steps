@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS Elastic MapReduce
 x-complete: 1
@@ -12,26 +11,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=AddJobFlowSteps:
-    get:
-      summary: Add Job Flow Steps
-      description: AddJobFlowSteps adds new steps to a running job flow.
-      operationId: addJobFlowSteps
-      x-api-path-slug: actionaddjobflowsteps-get
-      parameters:
-      - in: query
-        name: JobFlowId
-        description: A string that uniquely identifies the job flow
-        type: string
-      - in: query
-        name: Steps
-        description: A list of StepConfig to be executed by the job flow
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Job Flow Steps
   /?Action=CancelSteps:
     get:
       summary: Cancel Steps
@@ -103,4 +82,23 @@ paths:
           description: OK
       tags:
       - Steps
----
+  /?Action=AddJobFlowSteps:
+    get:
+      summary: Add Job Flow Steps
+      description: AddJobFlowSteps adds new steps to a running job flow.
+      operationId: addJobFlowSteps
+      x-api-path-slug: actionaddjobflowsteps-get
+      parameters:
+      - in: query
+        name: JobFlowId
+        description: A string that uniquely identifies the job flow
+        type: string
+      - in: query
+        name: Steps
+        description: A list of StepConfig to be executed by the job flow
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Job Flow Steps

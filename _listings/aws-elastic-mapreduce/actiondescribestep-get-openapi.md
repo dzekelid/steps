@@ -13,26 +13,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=AddJobFlowSteps:
-    get:
-      summary: Add Job Flow Steps
-      description: AddJobFlowSteps adds new steps to a running job flow.
-      operationId: addJobFlowSteps
-      x-api-path-slug: actionaddjobflowsteps-get
-      parameters:
-      - in: query
-        name: JobFlowId
-        description: A string that uniquely identifies the job flow
-        type: string
-      - in: query
-        name: Steps
-        description: A list of StepConfig to be executed by the job flow
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Job Flow Steps
   /?Action=CancelSteps:
     get:
       summary: Cancel Steps
@@ -73,6 +53,57 @@ paths:
           description: OK
       tags:
       - Steps
+  /?Action=ListSteps:
+    get:
+      summary: List Steps
+      description: Provides a list of steps for the cluster in reverse order unless
+        you specify stepIds with the request.
+      operationId: listSteps
+      x-api-path-slug: actionliststeps-get
+      parameters:
+      - in: query
+        name: ClusterId
+        description: The identifier of the cluster for which to list the steps
+        type: string
+      - in: query
+        name: Marker
+        description: The pagination token that indicates the next set of results to
+          retrieve
+        type: string
+      - in: query
+        name: StepIds
+        description: The filter to limit the step list based on the identifier of
+          the steps
+        type: string
+      - in: query
+        name: StepStates
+        description: The filter to limit the step list based on certain states
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Steps
+  /?Action=AddJobFlowSteps:
+    get:
+      summary: Add Job Flow Steps
+      description: AddJobFlowSteps adds new steps to a running job flow.
+      operationId: addJobFlowSteps
+      x-api-path-slug: actionaddjobflowsteps-get
+      parameters:
+      - in: query
+        name: JobFlowId
+        description: A string that uniquely identifies the job flow
+        type: string
+      - in: query
+        name: Steps
+        description: A list of StepConfig to be executed by the job flow
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Job Flow Steps
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
